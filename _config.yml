@@ -1,0 +1,35 @@
+# Site settings
+title: "梵道流"
+description: "一个基于「梵道流」理论的跨学科知识探索平台"
+baseurl: "" # The subpath of your site, leave it blank if you're publishing to username.github.io
+url: "https://www.fandaoliu.com" # Your custom domain
+github_username: "gptapplied"
+repository: gptapplied/fandaoliu-knowledge
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed # For an RSS feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+minima:
+  skin: auto
+  social_links:
+    github: gptapplied
+
+# Default values - apply to all md files
+defaults:
+  - scope:
+      path: ""
+      type: "pages"  # this applies to all markdown files
+    values:
+      layout: "default"  # Use a simple default layout
